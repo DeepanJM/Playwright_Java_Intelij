@@ -1,13 +1,14 @@
 package tests;
 
 import base.BaseTest;
+import base.OldBaseTest;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import org.testng.annotations.Test;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 
-public class LoginTest extends BaseTest {
+public class LoginTest extends OldBaseTest {
 
     @Test
     public void test() {

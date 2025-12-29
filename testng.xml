@@ -1,8 +1,10 @@
-<suite name="PlaywriteSuite">
-    <test name="BasicTests">
-        <classes>
-            <class name="tests.FirstTest"/>
-            <class name="tests.LoginTest"/>
-        </classes>
-    </test>>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PlaywrightSuite">
+
+    <test name="AllTests">
+        <packages>
+            <package name="tests"/>
+        </packages>
+    </test>
+
 </suite>

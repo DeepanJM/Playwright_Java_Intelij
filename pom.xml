@@ -53,18 +53,45 @@
             <version>2.0.9</version>
         </dependency>
 
-        <!-- Cucumber -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>7.18.0</version>
-        </dependency>
 
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>7.18.0</version>
-        </dependency>
-    </dependencies>
+        <!-- Cucumber -->
+
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-java</artifactId>
+        <version>7.18.0</version>
+    </dependency>
+
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.18.0</version>
+</dependency>
+</dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <!-- Critical for Java 21 speed -->
+                    <useModulePath>false</useModulePath>
+
+                    <!-- Avoid unnecessary scanning -->
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
+
+                    <!-- Faster fork reuse -->
+                    <forkCount>1</forkCount>
+                    <reuseForks>true</reuseForks>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

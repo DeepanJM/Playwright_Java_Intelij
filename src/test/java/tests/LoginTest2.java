@@ -1,6 +1,7 @@
 package tests;
 
 import base.BaseTest;
+import base.OldBaseTest;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import org.testng.annotations.Test;
@@ -10,7 +11,7 @@ import pages.LoginPage;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-public class LoginTest2 extends BaseTest {
+public class LoginTest2 extends OldBaseTest {
 
     @Test(priority = 1)
     public void test() {
