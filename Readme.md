@@ -14,12 +14,12 @@ The framework supports:
 
 ## 🛠 Tech Stack
 
-- **Java 21**
-- **Playwright for Java**
-- **TestNG**
-- **Cucumber (TestNG runner)**
-- **Maven**
-- **Extent Reports**
+- Java 21
+- Playwright for Java
+- TestNG
+- Cucumber (TestNG runner)
+- Maven
+- Extent Reports
 
 ---
 
@@ -74,12 +74,20 @@ mvn exec:java -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install
 ## 📦 Dependencies
 All dependencies are managed via Maven (pom.xml), including:
 - Playwright
+  - https://mvnrepository.com/artifact/com.microsoft.playwright/playwright/1.56.0
 - TestNG
+  - https://mvnrepository.com/artifact/org.testng/testng/7.11.0
 - Cucumber
 - Extent Reports
+  - https://mvnrepository.com/artifact/com.aventstack/extentreports/5.1.2
 - SLF4J
 
 No manual JAR setup is required.
+
+**NOTE: Run the following in terminal after adding a dependency to the pom.xml file**
+```
+mvn clean install
+```
 
 ---
 ## 🧩 Framework Overview
