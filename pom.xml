@@ -82,9 +82,10 @@
                     <useModulePath>false</useModulePath>
 
                     <!-- Avoid unnecessary scanning -->
-                    <includes>
-                        <include>**/*Test.java</include>
-                    </includes>
+                    <!-- Tell Maven to use TestNG suite -->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
 
                     <!-- Faster fork reuse -->
                     <forkCount>1</forkCount>

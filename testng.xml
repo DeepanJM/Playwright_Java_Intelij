@@ -4,6 +4,7 @@
     <test name="AllTests">
         <packages>
             <package name="tests"/>
+            <package name="runners"/>
         </packages>
     </test>
 

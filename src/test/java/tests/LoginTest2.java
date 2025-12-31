@@ -34,6 +34,8 @@ public class LoginTest2 extends OldBaseTest {
         homePage.clickTimeLink();
 
         test.info("All Steps Completed");
+
+        System.out.println("Login with separate methods ");
     }
 
     @Test(priority = 2)
@@ -53,5 +55,7 @@ public class LoginTest2 extends OldBaseTest {
         assertEquals(homePage.getTimeLinkText(), "Time", "Time link text mismatch");
 
         test.info("All Steps Completed");
+
+        System.out.println("Login with single method ");
     }
 }

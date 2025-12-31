@@ -21,5 +21,7 @@ public class LoginTest extends OldBaseTest {
         page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Time")).click();
         assertThat(page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Performance"))).isVisible();
         assertThat(page.getByLabel("Sidepanel").getByRole(AriaRole.LIST)).containsText("Leave");
+
+        System.out.println("Login with valid credentials and verify dashboard navigation");
     }
 }

@@ -129,7 +129,7 @@ From IDE:
 ### ▶ Run Cucumber Tests
 Run the TestNG Cucumber runner:
 ```
-runners.TestRunner
+mvn test -Dtest=TestRunner
 ```
 From IDE:
 - Right-click TestRunner.java
